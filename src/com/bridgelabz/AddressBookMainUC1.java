@@ -18,7 +18,7 @@ public class AddressBookMainUC1 {
 
 	public static  Scanner input = new Scanner(System.in);
 
-	static ArrayList<AddressBookMainUC1> addressBook = new ArrayList<AddressBookMainUC1>();
+	static ArrayList addressBook = new ArrayList();
 
 	//	Take input from users to create Contact
 	public static void createContact() {
@@ -62,9 +62,12 @@ public class AddressBookMainUC1 {
 		System.out.println("City : " + city);
 		System.out.println("State is: " + state);
 		System.out.println("Pincode : " + pincode);
-		System.out.println("Phone No : " + mobileNo);
+		System.out.println("Mobile No : " + mobileNo);
 		System.out.println("Email : " + email);
 
+		
+		EditContactUC3 addressBook = new EditContactUC3(firstName, lastName, email, city, state, mobileNo, pincode);
+		addressBook.add(addressBook);
 	}
 
 	public static void main(String[] args) {
@@ -74,15 +77,17 @@ public class AddressBookMainUC1 {
 
 
 		System.out.println("-----------------------");
-		CreateContactUC1 createcontact = new CreateContactUC1();
-		createcontact.contactDisplay();
-
+		CreateContactUC1 createContact = new CreateContactUC1();
+		createContact.contactDisplay();
+		
 		System.out.println("-----------------------");
-		AddContactUC2 addcontact = new AddContactUC2();
-		addcontact.contactDisplay();
+		AddContactUC2 addContact = new AddContactUC2();
+		addContact.contactDisplay();
 
-		DeleteContactUC4 delete = new DeleteContactUC4();
-		delete.deleteContact();
+		
+		
+		DeleteContactUC4 contactDelete = new DeleteContactUC4();
+		contactDelete.deleteContact();
 	}
 
 
