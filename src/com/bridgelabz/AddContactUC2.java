@@ -26,25 +26,25 @@ public class AddContactUC2 extends AddressBookMainUC1 {
      Scanner input = new Scanner(System.in);
      
      public void contactDisplay() {
-         System.out.println("Enter a First name: ");
+         System.out.println("Enter First name: ");
          String FirstName = input.next();
 
-         System.out.println("Enter a Last name: ");
+         System.out.println("Enter Last name: ");
          String LastName = input.next();
 
-         System.out.println("Enter a Address: ");
+         System.out.println("Enter Address: ");
          String Address = input.next();
 
-         System.out.println("Enter a State: ");
+         System.out.println("Enter State: ");
          String State = input.next();
 
-         System.out.println("Enter a City: ");
+         System.out.println("Enter City: ");
          String City = input.next();
 
-         System.out.println("Enter a Zipcode: ");
+         System.out.println("Enter Pincode: ");
          String Pincode = input.next();
 
-         System.out.println("Enter a Phone NUmber: ");
+         System.out.println("Enter MobileNo: ");
          String MobileNo = input.next();
 
          System.out.println("Enter a Email: ");
