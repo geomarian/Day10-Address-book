@@ -17,10 +17,10 @@ public class DeleteContactUC4 extends AddressBookMainUC1 {
             System.out.println(addressBook.get(i));
             
 			if (AddressBookMainUC1.addressBook.equals(confirmName)) ;
-            AddressBookMainUC1 person = addressBook.get(i);
+            AddressBookMainUC1 person = (AddressBookMainUC1) addressBook.get(i);
             addressBook.remove(person);
         }
-        System.out.println("deleted");
+        System.out.println("User deleted successfully");
     }
 
 }
