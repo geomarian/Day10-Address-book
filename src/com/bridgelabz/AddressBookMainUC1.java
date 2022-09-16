@@ -18,7 +18,7 @@ public class AddressBookMainUC1 {
 
 	public static  Scanner input = new Scanner(System.in);
 
-	static ArrayList<AddressBookMainUC1> addressBook = new ArrayList<AddressBookMainUC1>();
+	static ArrayList addressBook = new ArrayList();
 
 	//	Take input from users to create Contact
 	public static void createContact() {
